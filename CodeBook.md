@@ -43,10 +43,15 @@ Transformation steps
 
 8. We discard the activity_id column from the merged data
 
-9. We output the data using write.table and we ask it not to write the row numbers. We use CSV format
+9. Now data is wide format, so we will make it long format so that we can group aggregage for each subject/activity combination. We will melt the data which will do the trick.
 
+10. Now we will aggregate the data using dcast function, and providing mean as the aggregation function and subject/activity as the group
 
-tidy data set contains, all mean, std measurements from all the measurements and also the name of the activity
+11. We output the data using write.table and we ask it not to write the row numbers. We use CSV format
+
+the final_tidy_data_set will contain the aggregate mean data for each subject and activity.
+
+worth noting that there are 30 subjects and 6 possible activities that should generate 180 rows of data. and that is exactly the case in the output file.
 
 
 
