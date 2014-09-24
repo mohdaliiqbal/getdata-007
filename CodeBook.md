@@ -54,4 +54,8 @@ the final_tidy_data_set will contain the aggregate mean data for each subject an
 worth noting that there are 30 subjects and 6 possible activities that should generate 180 rows of data. and that is exactly the case in the output file.
 
 
+The tidy data set contains the following information
+Subject - the id of the subject from 1 - 30
+Activity label - the label of the activity
 
+The above two columns are followed by all mean and standard deviation readings for different measurements at X/Y/Z. The mean values have mean in the column name and standard deviations have std in the column name.
